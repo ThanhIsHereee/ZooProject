@@ -9,7 +9,7 @@ There are four members in our Project <br>
 | *Nguyễn Quang Thanh* 	| *SE173534* 	| *Backend*  	| *Member* 	| *ThanhIsHereee*    	|
 | *Đỗ Trần Lâm*    	| *SE172525* 	| *Backend*  	| *Member*                 	| *lamma*  	|
 | *Đỗ Dương Đăng Khoa*  	| *SE170285* 	| *Backend*  	| *Member*                 	| *KhoaHocMai113* 	|
-| *Lê Bảo Khang*        	| *SE171164* 	| *Frontend* 	| *Frontend Leader*        	| *kle1603*    	|
+| *Phan Minh Tùng*        	| *SE171971* 	| *Frontend* 	| *Frontend Leader*        	| *tungphan1011*    	|
 
 
 
