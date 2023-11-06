@@ -5,8 +5,9 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.Extensions.Configuration;
+using BusinessObject.Models;
 
-namespace BusinessObject.Models
+namespace ZooDAO
 {
     public partial class PRN211_ZOOContext : DbContext
     {
@@ -32,18 +33,18 @@ namespace BusinessObject.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer(GetConnectionString());
+                optionsBuilder.UseSqlServer(DBcon());
             }
         }
-        public string GetConnectionString()
+        public string DBcon()
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json");
             IConfiguration configuration = builder.Build();
             return configuration.GetConnectionString("DBDefault");
-
         }
+       
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
