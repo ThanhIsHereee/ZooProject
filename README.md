@@ -7,9 +7,9 @@ There are four members in our Project <br>
 | Name                    	|     UniID    	|     Role     	| Position                   	| GitUser 	|
 |-------------------------	|:------------:	|:------------:	|----------------------------	|----------------	|
 | *Nguyễn Quang Thanh* 	| *SE173534* 	| *Backend*  	| *Member* 	| *ThanhIsHereee*    	|
-| *Đỗ Trần Lâm*    	| *SE172525* 	| *Backend*  	| *Member*                 	| *lamma*  	|
+| *Đỗ Trần Lâm*    	| *SE172525* 	| *Backend*  	| *Member*                 	| *lama-try-code*  	|
 | *Đỗ Dương Đăng Khoa*  	| *SE170285* 	| *Backend*  	| *Member*                 	| *KhoaHocMai113* 	|
-| *Lê Bảo Khang*        	| *SE171164* 	| *Frontend* 	| *Frontend Leader*        	| *kle1603*    	|
+| *Phan Minh Tùng*        	| *SE171971* 	| *Backend* 	| *Member*        	| *tungphan1011*    	|
 
 
 
