@@ -44,8 +44,10 @@ namespace ZooManagement_Project_PRN211
                             MessageBox.Show("Login with role Staff");
                             break;
                         case "trainer":
-                            MessageBox.Show("Login with role ZooTrainer");
-
+                            //MessageBox.Show("Login with role ZooTrainer");
+                            ZooTrainerMenu profile = new ZooTrainerMenu(newuser);
+                            profile.Show();
+                            this.Hide();
                             break;
                         default:
                             MessageBox.Show("Unknow Role !");
