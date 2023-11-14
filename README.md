@@ -8,7 +8,7 @@ There are four members in our Project <br>
 |-------------------------	|:------------:	|:------------:	|----------------------------	|----------------	|
 | *Nguyễn Quang Thanh* 	| *SE173534* 	| *Backend*  	| *Member* 	| *ThanhIsHereee*    	|
 | *Đỗ Trần Lâm*    	| *SE172525* 	| *Backend*  	| *Member*                 	| *lama-try-code*  	|
-| *Đỗ Dương Đăng Khoa*  	| *SE170285* 	| *Backend*  	| *Member*                 	| *KhoaHocMai113* 	|
+| *Phạm Nhật Tiến*  	| *SE172194* 	| *Backend*  	| *Member*                 	| *tien43032003* 	|
 | *Phan Minh Tùng*        	| *SE171971* 	| *Backend* 	| *Member*        	| *tungphan1011*    	|
 
 
