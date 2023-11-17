@@ -150,7 +150,8 @@ namespace ZooManagement_Project_PRN211
                   .Where(x => x.Role.ToString().Contains(txt_search.Text.Trim()))
                   .Select(x => new { x.Fullname, x.Pasword, x.Role, x.Experience, x.Address, x.UserId, x.Username, x.Phonenumber }).ToList();
 
-                }else
+                }
+                else
                 {
                     dtg_listAccount.DataSource = null;
                     MessageBox.Show("The Account Is Not Found !....Check Again!");
