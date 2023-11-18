@@ -63,12 +63,17 @@ namespace ZooManagement_Project_PRN211
             string foodId = (string)comboBox3.SelectedValue;
             var date = dateTimePicker1.Text;
             var result = _service.CreateSchedule(id, animalId, foodId, date);
-            if(result != null)
+            if (result != null)
             {
                 MessageBox.Show("Create Successs");
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = _service.GetAllSchedule();
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

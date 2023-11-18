@@ -22,11 +22,13 @@ namespace ZooDAO
 
         public virtual DbSet<Animal> Animal { get; set; }
         public virtual DbSet<AnimalSpecies> AnimalSpecies { get; set; }
-        public virtual DbSet<Area> Area { get; set; }
+       
         public virtual DbSet<Cage> Cage { get; set; }
+
         public virtual DbSet<Food> Food { get; set; }
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<ZooTrainerAnimal> ZooTrainerAnimal { get; set; }
+        
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -57,13 +59,7 @@ namespace ZooDAO
                     .HasConstraintName("FK_Animal_AnimalSpecies");
             });
 
-            modelBuilder.Entity<Area>(entity =>
-            {
-                entity.HasOne(d => d.User)
-                    .WithMany(p => p.Area)
-                    .HasForeignKey(d => d.UserId)
-                    .HasConstraintName("FK_Area_User");
-            });
+
 
             modelBuilder.Entity<Cage>(entity =>
             {

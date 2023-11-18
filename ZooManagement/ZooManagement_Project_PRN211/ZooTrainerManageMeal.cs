@@ -126,5 +126,10 @@ namespace ZooManagement_Project_PRN211
                 }
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
