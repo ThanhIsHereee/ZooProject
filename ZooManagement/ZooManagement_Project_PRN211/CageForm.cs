@@ -30,6 +30,8 @@ namespace ZooManagement_Project_PRN211
             txt_area.Text = dataCage.CurrentRow.Cells["AreaId"].Value.ToString();
             txt_user.Text = dataCage.CurrentRow.Cells["UserId"].Value.ToString();
             txt_animal.Text = dataCage.CurrentRow.Cells["AnimalSpeciesId"].Value.ToString();
+            txt_cagearea.Text = dataCage.CurrentRow.Cells["CageArea"].Value.ToString();
+
 
         }
 
@@ -37,7 +39,7 @@ namespace ZooManagement_Project_PRN211
         {
             dataCage.DataSource = service.GetAllListCage()
            .Where(x => x.CageId.Contains(txt_search.Text.Trim()))
-           .Select(x => new { x.CageId, x.UserId, x.AreaId, x.AnimalSpeciesId }).ToList();
+           .Select(x => new { x.CageId, x.UserId, x.AreaId, x.AnimalSpeciesId,x.CageArea }).ToList();
         }
         private void delete_Click(object sender, EventArgs e)
         {
@@ -70,7 +72,7 @@ namespace ZooManagement_Project_PRN211
                     cage.AreaId = txt_area.Text.Trim();
                     cage.AnimalSpeciesId = txt_animal.Text.Trim();
                     cage.UserId = txt_user.Text.Trim();
-
+                    cage.CageArea = txt_cagearea.Text.Trim();
                     service.UpdateCage(cage);
                     MessageBox.Show("Update cage Success !");
                     dataCage.DataSource = service.GetAllListCage();
@@ -107,7 +109,7 @@ namespace ZooManagement_Project_PRN211
                     cage.AreaId = txt_area.Text.Trim();
                     cage.AnimalSpeciesId = txt_animal.Text.Trim();
                     cage.UserId = txt_user.Text.Trim();
-                    cage.CageArea = txt_cage.Text.Trim();
+                    cage.CageArea = txt_cagearea.Text.Trim();
                     service.AddCage(cage);
                     MessageBox.Show("Add cage Success !");
                     dataCage.DataSource = service.GetAllListCage();
@@ -131,7 +133,7 @@ namespace ZooManagement_Project_PRN211
                     cage.AreaId = txt_area.Text.Trim();
                     cage.AnimalSpeciesId = txt_animal.Text.Trim();
                     cage.UserId = txt_user.Text.Trim();
-
+                    cage.CageArea = txt_cagearea.Text.Trim();
                     service.UpdateCage(cage);
                     MessageBox.Show("Update cage Success !");
                     dataCage.DataSource = service.GetAllListCage();

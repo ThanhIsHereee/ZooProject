@@ -42,6 +42,8 @@
             delete = new Button();
             update = new Button();
             dataCage = new DataGridView();
+            txt_cagearea = new TextBox();
+            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataCage).BeginInit();
             SuspendLayout();
             // 
@@ -166,11 +168,29 @@
             dataCage.TabIndex = 13;
             dataCage.CellContentClick += dataCage_CellContentClick;
             // 
+            // txt_cagearea
+            // 
+            txt_cagearea.Location = new Point(121, 85);
+            txt_cagearea.Name = "txt_cagearea";
+            txt_cagearea.Size = new Size(188, 23);
+            txt_cagearea.TabIndex = 14;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(34, 85);
+            label5.Name = "label5";
+            label5.Size = new Size(65, 15);
+            label5.TabIndex = 15;
+            label5.Text = "Cage area :";
+            // 
             // CageForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label5);
+            Controls.Add(txt_cagearea);
             Controls.Add(dataCage);
             Controls.Add(update);
             Controls.Add(delete);
@@ -208,5 +228,7 @@
         private Button delete;
         private Button update;
         private DataGridView dataCage;
+        private TextBox txt_cagearea;
+        private Label label5;
     }
 }
