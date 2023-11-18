@@ -41,7 +41,11 @@ namespace ZooManagement_Project_PRN211
                             this.Hide();
                             break;
                         case "staff":
-                            MessageBox.Show("Login with role Staff");
+                            //Login with role Staff
+                            StaffMenu staffmnu = new StaffMenu();
+                            staffmnu.Show();
+                            this.Hide();
+                            
                             break;
                         case "trainer":
                             //MessageBox.Show("Login with role ZooTrainer");

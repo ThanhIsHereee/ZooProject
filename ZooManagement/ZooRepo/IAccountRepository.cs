@@ -16,5 +16,6 @@ namespace ZooRepo
         public void AddAccount(User user);
         public void RemoveAccount(string UserID);
         public void UpdateAccount(User userID);
+        public List<User> GetTrainerACcount();
     }
 }
