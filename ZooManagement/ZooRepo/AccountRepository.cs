@@ -16,6 +16,9 @@ namespace ZooRepo
         public List<User> GetAllListUser()
             =>AccountDAO.Instance.GetAllListUser();
 
+        public List<User> GetTrainerACcount()
+       => AccountDAO.Instance.GetTrainerACcount();
+
         public void RemoveAccount(string UserID)
         =>AccountDAO.Instance.RemoveAccount(UserID);
 

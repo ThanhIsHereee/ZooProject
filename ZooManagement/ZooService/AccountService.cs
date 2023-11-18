@@ -60,5 +60,10 @@ namespace ZooService
         {
             AccRepo.UpdateAccount(userID);
         }
+
+        public List<User> GetTrainerACcount()
+        {
+            return AccRepo.GetTrainerACcount();
+        }
     }
 }

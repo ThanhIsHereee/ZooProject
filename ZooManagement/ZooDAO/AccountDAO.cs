@@ -126,6 +126,13 @@ namespace ZooDAO
             }
 
         }
+        public List<User> GetTrainerACcount()
+        {
+            var db = new PRN211_ZOOContext();
+            return db.User.Where(x=>x.Role.Equals("trainer")).ToList();
+
+        }
+
 
     }
 }
